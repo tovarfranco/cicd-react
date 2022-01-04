@@ -11,7 +11,7 @@ function CategoryWrapper() {
     /* DidMount pero con Hook. */
     useEffect(() => {                                                                                // Recibe un callback y un array de dependencias. El "DidMount" recibe SIEMPRE un array vacío, indicando que no mira ninguna dependencia/variable de seguimiento.
         console.log('%cSe montó el componente - DidMount', 'color: green');
-        fetch('http://testing-env.eba-jihi3t4h.us-east-2.elasticbeanstalk.com/api/categories')                                                                     // Obtención de datos.
+        fetch('/api/categories')                                                                     // Obtención de datos.
             .then(response => response.json())
             .then(data => {
                 setCategories(data.data)
