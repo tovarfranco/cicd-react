@@ -6,7 +6,7 @@ function ProductList(props) {
             {/* <!-- Fila --> */}
             <tr role="row">
                 <td className="td-product" role="cell">{props.id_product}</td>
-                {/* <td className="td-product" role="cell"><a href={`http://localhost:3000/images/products/${props.image}`} target="_blank">Ver imagen</a></td> */}
+                {/* <td className="td-product" role="cell"><a href={`https://roostermusic.net/images/products/${props.image}`} target="_blank">Ver imagen</a></td> */}
                 <td className="td-product" role="cell"><a href={`https://roostermusic.net/images/products/${props.image}`} target="_blank" rel="noreferrer"><img src={`https://roostermusic.net/images/products/${props.image}`} alt="producto" /></a></td>
                 <td className="td-product" role="cell">{props.name}</td>
                 <td className="td-product" role="cell">{props.price}</td>
