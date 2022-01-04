@@ -2,7 +2,7 @@
   "name": "proyecto-vacio-inicial",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://testing-env.eba-jihi3t4h.us-east-2.elasticbeanstalk.com",
+  "proxy": "http://localhost:3000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",

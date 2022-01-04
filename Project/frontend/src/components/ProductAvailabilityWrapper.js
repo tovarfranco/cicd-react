@@ -11,7 +11,7 @@ function ProductAvailabilityWrapper() {
     /* DidMount pero con Hook. */
     useEffect(() => {                                                                            // Recibe un callback y un array de dependencias. El "DidMount" recibe SIEMPRE un array vacío, indicando que no mira ninguna dependencia/variable de seguimiento.
         console.log('%cSe montó el componente - DidMount', 'color: green');
-        fetch('https://roostermusic.net/api/products')                                                                   // Obtención de datos.
+        fetch('/api/products')                                                                   // Obtención de datos.
             .then(response => response.json())
             .then(data => {
                 setProducts(data.data)
