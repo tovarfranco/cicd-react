@@ -70,13 +70,13 @@ function Search(props) {
                                 products.length > 0 && nombre !== '' && products.map((product, i) => {
                                     return (
                                         <article className="articulo" key={i}>
-                                            <div className="articulo-imagen"><img src={`https://roostermusic.net/images/products/${product.image}`} alt="producto" /></div>
+                                            <div className="articulo-imagen"><img src={`http://localhost:3000/images/products/${product.image}`} alt="producto" /></div>
                                             <hr />
                                             <div className="articulo-descripcion">
                                                 <h3 className="texto-titulo-articulo">{product.brand}</h3>
                                                 <h4 className="texto-descripcion-articulo">{product.name}</h4>
                                                 <h3 className="texto-precio-articulo">U$S {product.price}</h3>
-                                                <a className="a-sitio" href={`https://roostermusic.net/products/detail/${product.id_product}`} target="_blank" rel="noreferrer">Ir al sitio</a>
+                                                <a className="a-sitio" href={`http://localhost:3000/products/detail/${product.id_product}`} target="_blank" rel="noreferrer">Ir al sitio</a>
                                             </div>
                                         </article>
                                     )

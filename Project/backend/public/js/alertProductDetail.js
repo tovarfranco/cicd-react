@@ -32,7 +32,7 @@ $('#form-comprar').submit(function (e) {
         cancelButtonText: 'Cancelar'
     }).then((result) => {
         if (result.isConfirmed) {
-            this.submit();
+            this.submit();                              // Con this apuntamos a este mismo formulario.
         }
     })
 });
